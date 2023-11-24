@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potfolio | BINAY DAS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICES</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT ME</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi! I'm <span>Binay Das</span></h1>
+                <p class="about_p1">Web Developer</p>
+                <p class="about_p2">I'm a dedicated web developer with a passion for crafting elegant and efficient solutions. Specializing in cutting-edge technologies, I transform innovative ideas into seamless, user-centric web experiences. With a commitment to exceeding client expectations, I invite you to collaborate and bring your digital vision to life on the ever-evolving canvas of web development.</p>
+                <button class="cv">Download CV</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="user.png" alt="user">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hey, I'm Binay, a passionate web developer with a strong commitment to creating exceptional online experiences. My expertise includes web developement, responsive designs, user-friendly interfaces, and speed optimization. I'm dedicated to making the web a better place, and I focus on delivering top-notch websites that make your online presence shine. I'm here with sleek designs, robust codes, good user experiences.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experiences</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Dev</span><br>Full Stack Web Development<br>HTML, CSS, Complete MERN Stack, Database Management</li>
+                            <li><span>App Dev</span><br>Builidng Android Apps<br>Java, Kotlin</li>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces<br>Figma, Canva</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Google</span><br>Android Developer Intern</li>
+                            <li><span>Oracle</span><br>App Developer Intern</li>
+                            <li><span>Microsoft</span><br>Web Developer Intern</li>                           
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>BTech</span><br>CS Undergrad at Meghnad Saha Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Languages</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa sapiente, officia veritatis tempora quo velit qui sit ut beatae, fugiat aliquam? Aliquam fugiat nobis minus laudantium autem vero dicta!</p>
+                    <img src="c.png" alt="c">
+                    <img src="cpp.png" alt="cpp">
+                    <img src="chash.png" alt="">
+                    <img src="java.png" alt="java">
+                    <img src="python.png" alt="py">
+                    <img src="js.png" alt="js">
+                    <img src="php.png" alt="php">
+                </div>
+                <div>
+                    <h2>Web Development</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa sapiente, officia veritatis tempora quo velit qui sit ut beatae, fugiat aliquam? Aliquam fugiat nobis minus laudantium autem vero dicta!</p>
+                    <img src="html.png" alt="html">
+                    <img src="css.png" alt="css">
+                    <img src="js.png" alt="js">
+                    <img src="mongodb.png" alt="m">
+                    <img src="express.png" alt="e">
+                    <img src="react.png" alt="r">
+                    <img src="/node.png" alt="n">
+                </div>
+                <div>
+                    <h2>Others</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ipsa sapiente, officia veritatis tempora quo velit qui sit ut beatae, fugiat aliquam? Aliquam fugiat nobis minus laudantium autem vero dicta!</p>
+                    <img src="git.png" alt="git">
+                    <img src="github.png" alt="github">
+                    <img src="bootstrap.png" alt="bootstrap">
+                    <img src="figma.png" alt="figma">
+                    <img src="canva.png" alt="canva">
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Portfolio</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="project1.png" alt="code-craft">
+                    <div class="layer">
+                        <h2>Code Craft Project</h2>
+                        <p>This is a project made by me as a part of the code-craft competition.</p>
+                        <a href="https://binay-das.github.io/code-craft-project/" target="_blank">Website Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="project2.png" alt="online-ticket-reservation">
+                    <p></p>
+                    <div class="layer">
+                        <h2>Online Train Ticket Reservation</h2>
+                        <p>This is a website made by me for users to reserve their train tickets online.</p>
+                        <a href="https://binay-das.github.io/bookmytrain/" target="_blank">Website Link</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="project3.png" alt="portfolio-website">
+                    <div class="layer">
+                        <h2>Portfolio Website</h2>
+                        <p>This is my portfolio website where all my work in web and app development can be found.</p>
+                        <a href="#" target="_blank">Website Link</a>
+                    </div>
+                </div>
+            </div>
+            <button class="learn">More on GitHub <img src="github.png" alt="github"></button>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <div class="social-icons">
+                        <img src="contact.svg" alt="contact">
+                    </div>
+                    <p>Let's connect and embark on the journey to create the web of our dreams together.</p>
+                    <div class="socials">
+                        <a href="#"><img src="github_logo.png" alt="github"></a>
+                        <a href="#"><img src="twitter.png" alt="twitter"></a>
+                        <a href="#"><img src="linkedin.png" alt="linkedin"></a>
+                        <a href="#"><img src="instagram.png" alt="instagram"></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form action="">
+                        <p>Feel free to share your suggestions, feedback, or explore collaboration on a project. If you anticipate a response, kindly provide your contact information.</p>
+                        <input type="text" name="Name" placeholder="Enter your name" id="" required>
+                        <input type="email" name="email" placeholder="Enter your email" id="" required>
+                        <textarea name="Message" id="" rows="10" placeholder="Write your feedback here"></textarea>
+                        <button class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; 2023 | Made with &#10084; by Binay</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+</body>
+</html>
