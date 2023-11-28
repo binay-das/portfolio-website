@@ -26,10 +26,11 @@ nav{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    /* position: fixed; */
+    position: fixed;
     background-color: rgba(78, 78, 81, 0.9);
-    /* width: 80%; */
+    width: 80%;
     border-radius: 10px;
+    z-index: 3;
 }
 .logo{
     width: 170px;
@@ -216,7 +217,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 .services-list div:hover h2{
-    text-decoration: wheat underline;
+/*     text-decoration: wheat underline; */
 }
 .services-list div img{
     width: 70px;
@@ -449,6 +450,17 @@ form .btn2:hover{
 
 nav .fas{
     display: none;
+}
+
+.link{
+    display: flex;
+    width: 30%;
+    justify-content: space-between;
+    position: relative;
+    bottom: -20px;
+}
+.link .fa-brands, .link .fa-solid{
+    font-size: 20px;
 }
 
 @media only screen and (max-width: 600px){
