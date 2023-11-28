@@ -505,7 +505,6 @@ nav .fas{
     }
     nav ul .fas{
         position: absolute;
-        /* 1:30:00 */
         top: 25px;
         left: 25px;
         cursor: pointer;
